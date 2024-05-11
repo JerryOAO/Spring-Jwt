@@ -4,11 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7582131e-5ca1-48c7-8a98-00d97486352e" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/entity/RestBean.java" afterDir="false" />
+    <list default="true" id="7582131e-5ca1-48c7-8a98-00d97486352e" name="更改" comment=":white_check_mark: 配置SpringSecurity基本内容">
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/config/RabbitConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/controller/AuthorizeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/entity/dto/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/entity/vo/response/AuthorizeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/filter/CorsFilterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/filter/JwtAuthorizeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/listener/MailQueueListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/utils/Const.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/utils/FlowUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/utils/JwtUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jwt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt/src/main/java/com/example/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt/src/main/java/com/example/entity/RestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt/src/main/java/com/example/entity/RestBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jwt/src/test/java/com/example/JwtApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jwt/src/test/java/com/example/JwtApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/assets/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/TheWelcome.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/WelcomeItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/icons/IconCommunity.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/icons/IconDocumentation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/icons/IconEcosystem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/icons/IconSupport.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/components/icons/IconTooling.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-jwt/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-jwt/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +53,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,6 +96,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.JwtApplicationTests.contextLoads.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -84,7 +121,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunManager" selected="Spring Boot.JwtApplication">
+    <configuration name="JwtApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jwt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.JwtApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:5173">
       <method v="2" />
     </configuration>
@@ -95,6 +151,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JwtApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,8 +176,20 @@
       <workItem from="1715241821136" duration="497000" />
       <workItem from="1715242534428" duration="203000" />
       <workItem from="1715247013518" duration="1083000" />
-      <workItem from="1715279878526" duration="1591000" />
+      <workItem from="1715279878526" duration="2329000" />
+      <workItem from="1715283212610" duration="2988000" />
+      <workItem from="1715326569721" duration="10291000" />
+      <workItem from="1715395170290" duration="15613000" />
     </task>
+    <task id="LOCAL-00001" summary=":white_check_mark: 配置SpringSecurity基本内容">
+      <option name="closed" value="true" />
+      <created>1715281869250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715281869250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,5 +205,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":white_check_mark: 配置SpringSecurity基本内容" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: 配置SpringSecurity基本内容" />
   </component>
 </project>

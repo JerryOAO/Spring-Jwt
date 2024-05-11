@@ -1,1 +1,24 @@
-spring.application.name=Jwt
+spring:
+  mail:
+    host: smtp.163.com
+    username: s1107965666@163.com
+    password: HBAUDBYIQTGZLYEN
+  # rabbitmq是指定rabbitmq的配置
+  rabbitmq:
+    # rabbitmq的地址
+    addresses: localhost
+    username: guest
+    password: guest
+    # rabbitmq的虚拟主机
+    virtual-host: /
+  security:
+    filter:
+      order: -100
+    jwt:
+      key: huairen215
+      expire: 7
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_test
+    username: root
+    password: 523440
+    driver-class-name: com.mysql.cj.jdbc.Driver
