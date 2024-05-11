@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'HarmonyOS';
+  src: url('HarmonyOS.ttf');
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'aliHealthFont';
+    src: url('AlibabaHealthFont20CN-85B.TTF');
+}
+* {
+  font-family: 'aliHealthFont' !important; /* 应用字体 */
+}
+.el-input__inner,.el-button span {
+  font-family: 'HarmonyOS' !important;
+}
+
