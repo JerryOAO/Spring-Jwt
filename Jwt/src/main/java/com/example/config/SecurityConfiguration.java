@@ -41,7 +41,7 @@ public class SecurityConfiguration {
         return http
                 //这里是配置请求的匹配规则
                 .authorizeHttpRequests(conf -> conf
-                        .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/auth/**","/error").permitAll()
                         .anyRequest().authenticated()
                 )
                 //这里是配置登录的相关信息
